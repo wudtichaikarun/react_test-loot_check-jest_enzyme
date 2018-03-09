@@ -9,6 +9,7 @@ const App = () => (
     <Wallet />
     <hr />
     <Loot />
+    <div>Power by <a target='_black' href='https://www.coindesk.com/price' >Coindesk</a> </div>
   </div>
 )
 
