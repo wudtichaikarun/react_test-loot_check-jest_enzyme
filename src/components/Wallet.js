@@ -10,6 +10,7 @@ export class Wallet extends Component {
   }
 
   updateBalance = event => {
+    // parseInt param_1=sting you want to convert param_2=base number 
     this.setState({ balance: parseInt(event.target.value, 10) })
   }
 
