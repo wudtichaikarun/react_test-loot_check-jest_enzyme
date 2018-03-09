@@ -31,16 +31,10 @@ export class Wallet extends Component {
   }
 }
 
-// export const Wallet = ({balance}) => (
-//   <div>
-//     <h3 className='balance'>Wallet balance: {balance}</h3>
-//   </div>
-// )
-
 export default connect(
   // map state to props
   state => ({
-    balance: state
+    balance: state.balance
   }),
   // map dispatch to props
   { 
