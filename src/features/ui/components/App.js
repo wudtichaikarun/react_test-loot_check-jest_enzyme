@@ -1,6 +1,6 @@
 import React from 'react'
-// import Wallet from '../../wallet/Wallet'
-// import Loot from '../../loot/Loot'
+import Wallet from '../../wallet/components/Wallet'
+import Loot from '../../loot/components/Loot'
 
 const App = () => (
   <div>
