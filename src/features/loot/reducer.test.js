@@ -1,5 +1,5 @@
-import bitcoinReducer from './bitcoin'
-import { FETCH_BITCOID } from '../actions/constants'
+import bitcoinReducer from './reducer'
+import { FETCH_BITCOID } from '../../types'
 
 describe('bitcoinReducer', () => {
   const bitcoinData = { bpi: 'bitcoin price index' }

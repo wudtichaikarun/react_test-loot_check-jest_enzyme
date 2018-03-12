@@ -11,7 +11,7 @@ export const setBalance = balance => {
   }
 }
 
-export const deposit = deposit => {
+export const deposited = deposit => {
   return {
     type: DEPOSIT,
     deposit

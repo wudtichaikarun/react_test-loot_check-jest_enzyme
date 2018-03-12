@@ -2,8 +2,8 @@
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
 import fetchMock from 'fetch-mock'
-import { fetchBitcoin } from './bitcoin'
-import { FETCH_BITCOID } from './constants'
+import { fetchBitcoin } from './actions'
+import { FETCH_BITCOID } from '../../types'
 
 const createMockStore = configureMockStore([thunk])
 const store = createMockStore({ bitcoin: {} })

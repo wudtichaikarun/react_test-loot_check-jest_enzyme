@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { deposit, withdraw } from '../actions'
+import { deposited, withdraw } from '../actions'
 
 export class Wallet extends Component {
   constructor() {
@@ -38,7 +38,7 @@ export default connect(
   }),
   // map dispatch to props
   { 
-    deposit,
+    deposited,
     withdraw 
   }
 )(Wallet)

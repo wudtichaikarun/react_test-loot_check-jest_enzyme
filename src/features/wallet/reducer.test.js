@@ -1,6 +1,10 @@
-import balanceReducer from './balance'
-import balanceReducer2 from './balance'
-import * as constants from '../actions/constants'
+import balanceReducer from './reducer'
+import balanceReducer2 from './reducer'
+import {
+  SET_BALANCE,
+  DEPOSIT,
+  WITHDRAW
+} from '../../types'
 
 describe('balanceReducer', () => {
   describe('when initializing', () => {
@@ -9,7 +13,7 @@ describe('balanceReducer', () => {
     it('sets a balance', () => {
   
       // balanceRducer param_1=prevState param_2=objData
-      expect(balanceReducer(undefined, { type: constants.SET_BALANCE, balance }))
+      expect(balanceReducer(undefined, { type: SET_BALANCE, balance }))
         .toEqual(balance)
     })
   
@@ -24,7 +28,7 @@ describe('balanceReducer', () => {
     const deposit = 10
     const initialState = 5
 
-    expect(balanceReducer(initialState, { type: constants.DEPOSIT, deposit }))
+    expect(balanceReducer(initialState, { type: DEPOSIT, deposit }))
       .toEqual(initialState + deposit)
   })
 
@@ -32,7 +36,7 @@ describe('balanceReducer', () => {
     const withdrawal = 10
     const initialState = 20
 
-    expect(balanceReducer(initialState, { type: constants.WITHDRAW, withdrawal}))
+    expect(balanceReducer(initialState, { type: WITHDRAW, withdrawal}))
       .toEqual(initialState - withdrawal)
   })
 })
